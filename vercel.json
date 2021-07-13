@@ -1,0 +1,17 @@
+{
+  "github": {
+    "silent": true
+  },
+  "builds": [
+    {
+      "use": "@vercel/static-build",
+      "src": "package.json",
+      "config": {
+        "zeroConfig": true,
+        "framework": "nuxtjs",
+        "buildCommand": "yarn ci:build",
+        "outputDirectory": "out"
+      }
+    }
+  ]
+}
